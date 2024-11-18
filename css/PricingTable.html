@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .cardContainer{
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+        .card1, .card2, .card3{
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button{
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .cardContainer{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Pricing Table</h1>
+    <div class="cardContainer">
+       <div class="card1">
+        <h2>Basics</h2>
+        <p>Free</p>
+        <p>5GB Storage</p>
+        <p>10 Users Allowed</p>
+        <button>SignUP</button>
+       </div>
+       <div class="card2">
+        <h2>Standard</h2>
+        <p>400rs/month</p>
+        <p>10GB Storage</p>
+        <p>100 Users Allowed</p>
+        <button>SignUP</button>
+       </div>
+       <div class="card3">
+        <h2>Premium</h2>
+        <p>1000rs/month</p>
+        <p>100GB Storage</p>
+        <p>1000 Users Allowed</p>
+        <button>SignUP</button>
+       </div>
+    </div>
+</body>
+</html>
