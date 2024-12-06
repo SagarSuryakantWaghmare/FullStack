@@ -17,3 +17,16 @@ function price(bottles){
     console.log("price of the bottles"+price);
 }
 price(5);
+
+function remaining(age){
+    let years=100-age;
+    console.log("You have "+years+" years remaining");
+    let months=years*12;
+    let weeks=years*52;
+    let days=years*365;
+    console.log("You have "+months+" months remaining");
+    console.log("You have "+weeks+" weeks remaining");
+    console.log("You have "+days+" days remaining");
+}
+
+remaining(20);
