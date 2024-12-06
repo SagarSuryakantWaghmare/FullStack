@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+</head>
+<body>
+    <h1>String Better</h1>
+    <p>Write a function that takes a string and returns a "new" string that is the original string with all the spaces removed.</p>
+    <h2>Enter your aim</h2>
+    <input style="height: 100px" type="text" placeholder="Aim">
+    <button onclick="checkData()">Submit</button>
+    <!-- Slice function -->
+     <!-- Arithmetic opertions -->
+      <!-- Given all 5 operations one by one -->
+       <!--  + - *% % -->
+         
+
+</body>
+<script>
+    function checkData(){
+        let a=document.querySelector('input').value;
+        console.log("Length of the text is "+a.length)
+        // alert(l);
+        console.log("The text you under in the upperCase is "+a.toUpperCase())
+        console.log("The text you under in the lowerCase is "+a.toLowerCase())
+        let x=a.charAt(0).toUpperCase();
+        let y=a.slice(1);
+        let z=x+y;
+        console.log("The text you entered in the capitalCase is "+z)
+    }
+
+</script>
+</html>
