@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #ff6f61;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 2px solid #ff6f61;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e65c55;
+        }
+
+        .result {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff6f61;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Love Calculator</h1>
+        <p>Enter your names to calculate the love.</p>
+        <input class="p1" type="text" placeholder="Enter first name">
+        <input class="p2" type="text" placeholder="Enter second name">
+        <button onclick="love()">Check Love</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function love() {
+            let p1 = document.getElementsByClassName('p1')[0].value.trim();
+            let p2 = document.getElementsByClassName('p2')[0].value.trim();
+            let resultDiv = document.getElementById('result');
+
+            if (!p1 || !p2) {
+                resultDiv.textContent = "Please enter both names.";
+                return;
+            }
+            let loveScore = Math.floor(Math.random() * 100) + 1;
+
+
+            let message;
+            if (p1.length == p2.length) {
+                loveScore=27;
+                console.log("We should not marriage ");
+                message = "Not marry";
+            }
+            else if (p1.length == 5 && p2.length == 8 || p1.length == 8 && p2.length == 5) {
+                loveScore=100;
+                console.log("You should marry each other");
+                message = "You made for each other"
+            }
+
+            else if (loveScore > 80) {
+                message = `Wow! ${p1} and ${p2} are a perfect match! 💕`;
+            } else if (loveScore > 50) {
+                message = `${p1} and ${p2} have a good chance at love! ❤️`;
+            } else {
+                message = `${p1} and ${p2} might need to work on their relationship. 💔`;
+            }
+            resultDiv.innerHTML = `
+                Love Score: <strong>${loveScore}%</strong><br>
+                ${message}
+            `;
+        }
+    </script>
+</body>
+
+</html>
