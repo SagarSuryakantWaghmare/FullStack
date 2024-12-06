@@ -30,3 +30,10 @@ function remaining(age){
 }
 
 remaining(20);
+
+// calculate the bmi
+function bmiCalculate(weight,height){
+    let  bmi=weight/(height*height);
+    console.log(bmi);
+}
+bmiCalculate(65,1.7);
