@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+<h1>Hello Good Morning</h1>
+<h2 class="sagar"></h2>
+<button onclick="handle()">Click Me</button>
+<ul>
+    <li>Google </li>
+    <li>Second</li>
+    <li>Third</li>
+</ul>
+</body>
+<script>
+    function handle() {
+        console.log("Hello");
+        var h1 = document.getElementsByTagName('h1')[0];
+        h1.innerHTML = "How you Doing";
+        let t=document.getElementsByTagName('li')[2].style.color='orange';
+        let s=document.getElementsByClassName('sagar')[0];
+        s.innerHTML="Sagar Can Do Anything"
+    }
+</script>
+</html>
