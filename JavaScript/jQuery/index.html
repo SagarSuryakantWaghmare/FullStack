@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>Sagar can do it</h1>
+    <h2>Abhi always talk loud</h2>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <button>Click me</button>
+    <input type="text">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("h1").css("color", "orange");
+        $("button").css("backgroundColor","pink")
+        $("h1").text("Sagar will do it");
+        $("button").html("<em>Rage</em>")
+        $("button").click(function(){
+            $("h1").css("color","purple");
+        })
+        $("input").keypress(function(e){
+            // console.log(e.key);
+            $("h1").text(e.key)
+        })
+        $('h1').mouseover(function (){
+            $("h1").css("color","green");
+        })
+        // $('h2').on("click",function(){
+        //     $("h2").hide();
+        // })
+        $('h2').on("click",function(){
+            $("h2").slideup().slideDown().animate({opacity:0.5});
+        })
+    </script>
+</body>
+
+</html>
