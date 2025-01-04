@@ -4,7 +4,8 @@ import './App.css'
 // import Fruits from './Components/Fruits.jsx'
 // import Operation from './Components/Operation.jsx'
 // import PropsDemo from './Components/PropsDemo.jsx'
-import Emoji from './Components/Emoji.jsx'
+// import Emoji from './Components/Emoji.jsx'
+import Notes from './Components/Notes.jsx'
 const App = () => {
   return (
     <>
@@ -12,7 +13,8 @@ const App = () => {
       {/* <Fruits /> */}
       {/* <Operation /> */}
       {/* <PropsDemo/> */}
-      <Emoji/>
+      {/* <Emoji/> */}
+      <Notes/>
     </>
   )
 }
