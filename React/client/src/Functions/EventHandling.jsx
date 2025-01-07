@@ -18,6 +18,7 @@ function EventHandling() {
          <h1>{heading}</h1>
          <input id="name" className="box" type="text" placeholder="What's your name ?" />
          <button  onClick={handleClick} 
+         onMouseDownCapture={changeColor}
          style={{backgroundColor:isMouseOver?"white":"yellow"}}
          className="box">Submit</button>
     </div>
