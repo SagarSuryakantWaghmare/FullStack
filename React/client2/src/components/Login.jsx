@@ -21,7 +21,7 @@ function Login() {
           Hello {fullName.fName} {fullName.lName}
         </div>
         <input onChange={handleSubmit} value={fullName.fName} type="text" placeholder="Enter your first name" />
-        <input onChange={handleSubmit} value={fullName.lName} type="text" placeholder="Enter your last name" />
+        <input onChange={handleSubmit} value={fullName.lName} type="text" placeholder="Enter your last name" />ss  
         <button>Submit</button>
       </div>
     </>
