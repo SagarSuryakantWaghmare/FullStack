@@ -20,6 +20,12 @@ function Keeper() {
       task: ""
     });
   };
+  const handleDelete = (index) => {
+    return()=>{
+        const newTask=tasks.filter((task,i)=>i!==index);
+        setTasks(newTask);
+    }
+}
   return (
     <>
       <div style={{ display: "flex", justifyContent: "center", backgroundColor: "orange", color: "white", height: "50px", alignItems: "center" }}>
@@ -66,6 +72,7 @@ function Keeper() {
               >
                 <h3>{task.title}</h3>
                 <p>{task.task}</p>
+                <button key={index} onClick={handleDelete(index)}>Delete</button>
               </li>
             ))}
           </ul>
