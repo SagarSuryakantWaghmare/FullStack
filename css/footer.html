@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ff7a15;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-button {
+      border: 2px solid black;
+      background: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .contact-button:hover {
+      background: black;
+      color: white;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .info, .links, .social {
+      flex: 1;
+    }
+
+    .info p, .links a, .social a {
+      margin: 5px 0;
+    }
+
+    .links a, .social a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .social a {
+      display: block;
+    }
+
+    .social a:hover, .links a:hover {
+      text-decoration: underline;
+    }
+
+    .copyright {
+      margin-top: 30px;
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Great things can happen with a simple "hello!"</h1>
+      <button class="contact-button">Contact me →</button>
+    </div>
+    <div class="footer">
+      <div class="info">
+        <p><strong>bastien.</strong></p>
+        <p>49 Rue de la Louvière</p>
+        <p>59800 Lille, France</p>
+        <p><a href="mailto:bastienmoiroux@mail.com">bastienmoiroux@mail.com</a></p>
+      </div>
+      <div class="links">
+        <a href="#">About</a>
+        <a href="#">Work</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="social">
+        <a href="#">Instagram →</a>
+        <a href="#">LinkedIn →</a>
+        <a href="#">Twitter →</a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>©2025 Moiroux Company. All rights reserved</p>
+    </div>
+  </div>
+</body>
+</html>
